@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+a {
+  color: white;
+} 
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  overflow-x: hidden; 
+  background-color: #23486a;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+
+.navbar {
+  width: 100%; 
+  padding: 10px 20px; 
+  box-sizing: border-box; 
+  text-decoration: none;
+  font-size: 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #23486a;
+}
+
+.navbar ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.navbar li {
+  float: right; 
+}
+
+.navbar li a {
+  display: block;
+  padding: 8px 16px; 
+  text-decoration: none; 
+  border: 2px solid transparent; 
+  transition: border-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  border-color: white; 
+}
+
+.container-text {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15rem;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.centered-div {
+  z-index: 1;
+  width: 400px;
+  height: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  font-weight: bold;
+  color: white;
+  animation: blink 0.7s step-end infinite;
+}
+
+.about-me {
+  width: 600px;
+  z-index: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.container-contact {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+
+.container-contact h1 {
+    z-index: 2;
+}
+
+.container-contact a {
+  text-decoration: none;
+}
+
+.github-box {
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.email-box {
+    z-index: 2;
+}
